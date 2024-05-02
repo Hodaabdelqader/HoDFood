@@ -35,7 +35,7 @@ export class FoodService {
       origins:['itely','egypt','japan'],
       stars:4.5,
       cooktime:'16-20',
-    imgurl: '/food-project/docs/assets/images/food1.jpg',
+    imgurl: 'assets/images/food1.jpg',
     tags:['Pasta', 'lunch']
     },
     {
@@ -46,7 +46,7 @@ export class FoodService {
       origins:['Egypt'],
       stars:4.5,
       cooktime:'5-10',
-    imgurl:'docs/assets/images/f2).jpg',
+    imgurl:'assets/images/f2).jpg',
     tags:['Fast food','Pizza']
     },
     {
@@ -57,7 +57,7 @@ export class FoodService {
       origins:['Japan'],
       stars:4.5,
       cooktime:'20-30',
-    imgurl:'/assets/images/f (3).jpg',
+    imgurl:'assets/images/f (3).jpg',
     tags:['Fast food', 'lunch','Pizza']
     },
     {
@@ -68,7 +68,7 @@ export class FoodService {
       origins:['itely'],
       stars:5,
       cooktime:'16-20',
-    imgurl:'/assets/images/meat 4.jpg',
+    imgurl:'assets/images/meat 4.jpg',
     tags:['Fast food', 'Meat']
     },
     {
@@ -79,7 +79,7 @@ export class FoodService {
       origins:['itely'],
       stars:3.5,
       cooktime:'16-20',
-    imgurl:'/assets/images/f4.jpg',
+    imgurl:'assets/images/f4.jpg',
     tags:['Fast food','Pizza', 'lunch'],
     },
     {
@@ -90,7 +90,7 @@ export class FoodService {
     origins:['itely'],
     stars:2.5,
     cooktime:'30-90',
-    imgurl:'/assets/images/food6.jpg',
+    imgurl:'assets/images/food6.jpg',
     tags:['Fish', 'lunch'],
     },
     {
@@ -101,7 +101,7 @@ export class FoodService {
     origins:['itely'],
     stars:2.5,
     cooktime:'20-30',
-    imgurl:'/assets/images/food7.jpg',
+    imgurl:'assets/images/food7.jpg',
     tags:[ 'Soup','lunch'],
     },
     {
@@ -112,6 +112,6 @@ export class FoodService {
     origins:['itely'],
     stars:2.5,
     cooktime:'60-90',
-    imgurl:'/assets/images/food 8.jpg',
+    imgurl:'assets/images/food 8.jpg',
     tags:[ 'Fish','lunch'],
     }]}}
