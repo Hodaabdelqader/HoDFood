@@ -1,0 +1,20 @@
+
+<div class="container mx-auto">
+  <div class="flex mt-5 mb-5 mx-1 justify-center items-center gap-10">
+    <div class="img">
+      <img [src]="food.imgurl" [alt]="food.name"  class=" rounded-md hover:opacity-75 transition duration-300 ease-in-out cursor-pointer  object-cover" width="500px" height="500px">
+    </div>
+    <div class="contant">
+      <div class="text flex gap-11 items-center justify-between">
+        <h1 class="font-bold text-2xl">{{food.name}}</h1>
+      <span class="{{food.fav?'':'not' }} fav">❤</span>
+      </div>
+
+      <h4 class="text-lg p-1 text-green-500"> <span class="text-gray-500 ">Price : </span>{{food.price|currency}}</h4>
+              <p class="text-gray-500 text-sm p-1">{{food.origins}}</p>
+              <p class="text-gray-400 text-sm p-1"> The Time to cook about <span class="text-black ">{{food.cooktime}}</span> minutes</p>
+              <p class="text-gray-800 p-1">{{food.stars}}</p>
+              <button class=" flex justify-center cursor-pointer bg-red-700 pt-1 px-6 text-white text-lg rounded-xl pb-1 border-0 outline-none " (click)="addToCart()">Add To Cart</button>
+    </div>
+  </div>
+</div>

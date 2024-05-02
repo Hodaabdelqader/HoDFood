@@ -1,0 +1,39 @@
+<app-not-found class="m-3 flex flex-col" [visable]="!cart||cart.items.length <=0"
+
+  notFoundMassage="Cart Page Is Empty"
+  resetLinkText="  go to the HomePage" ></app-not-found>
+
+<div class="container mx-auto"*ngIf="cart && cart.items.length>0">
+  <div class="checkour flex justify-center items-center gap-5 mt-5 mb-5">
+    <div class="py-1 px-3 bg-slate-500 rounded-lg">The Quantity In Cart<span class="text-white px-1">{{cart.items.length}}</span></div>
+    <div class="py-1 px-3 bg-slate-500 rounded-lg">The Total Price <span class="text-white px-1">{{cart.totalPrice|currency}}</span></div>
+  </div>
+  <ul>
+    <li *ngFor="let item of  cart.items" class="p-3 flex border-2 border-solid gap-10 items-center m-2">
+    <div class="img">
+      <img [src]="item.food.imgurl" class="rounded-3xl w-32">
+    </div>
+    <div class="contant p-2">
+      <div>
+        <a routerLink="/food/{{item.food.id}}">
+        <h2 class="font-bold">{{item.food.name}}</h2>
+        </a>
+      </div>
+      <div>
+        <select class="px-3 outline-none shadow-sm shadow-gray-800" #quantitySelect (change)="changeQuantity(item,quantitySelect.value)">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+        </select>
+      </div>
+      <div class=" text-green-500">
+        {{item.price|currency}}
+      </div>
+      <button (click)="removeFromCart(item)" class=" py-1 px-3 bg-red-700 cursor-pointer text-white text-md rounded-md">Remove From Cart</button>
+    </div>
+    </li>
+  </ul>
+</div>

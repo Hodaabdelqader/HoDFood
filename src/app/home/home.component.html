@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container mx-auto ">
+    <app-search></app-search>
+    <app-tags></app-tags>
+    <app-not-found [visable]="!foods||foods.length <=0"resetLinkText="Reset Search"></app-not-found>
+    <div class="contant grid lg:grid-cols-3 gap-1 md:grid-cols-2 sm:grid-cols-1 justify-center items-center justify-items-center">
+      <div class="bar-img py-1 mt-5 px-5 " *ngFor="let item of foods">
+        <div class="card w-[15rem]  shadow-xl rounded-md">
+          <a routerLink="/Food/{{item.id}}" ><img src="{{item.imgurl}}" class=" rounded-md hover:opacity-75 transition duration-300 ease-in-out cursor-pointer">
+          <div class="text p-2 relative ">
+            <p class="text-gray-900 text-xl">{{item.name}}</p>
+            <h4>{{item.price|currency}}</h4>
+            <p class="text-gray-500 text-sm">{{item.origins}}</p>
+            <p class="text-gray-800 text-right text-sm"><span class="text-sm">🕒</span>{{item.cooktime}}</p>
+            <p class="text-gray-800">{{item.stars}}</p>
+            <span class="absolute top-2 right-4 {{item.fav?'':'not' }} fav">❤</span>
+
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</body>
+</html>
