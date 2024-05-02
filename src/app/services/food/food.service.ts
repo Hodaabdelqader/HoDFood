@@ -35,7 +35,7 @@ export class FoodService {
       origins:['itely','egypt','japan'],
       stars:4.5,
       cooktime:'16-20',
-    imgurl:'/assets/images/food1.jpg',
+    imgurl:'docs/assets/images/food1.jpg',
     tags:['Pasta', 'lunch']
     },
     {
@@ -46,7 +46,7 @@ export class FoodService {
       origins:['Egypt'],
       stars:4.5,
       cooktime:'5-10',
-    imgurl:'/assets/images/f2).jpg',
+    imgurl:'docs/assets/images/f2).jpg',
     tags:['Fast food','Pizza']
     },
     {
