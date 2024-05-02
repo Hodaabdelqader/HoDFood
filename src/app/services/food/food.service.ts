@@ -13,10 +13,11 @@ export class FoodService {
   getAllTags():Tag[]{
   return[
     {name:'All',count:8},
-    {name:'Pizza',count:5},
+    {name:'Pizza',count:3},
     {name:'Soup',count:1},
     {name:'Meat',count:1},
-    {name:'Fish',count:1}
+    {name:'Fish',count:2},
+    {name:'pasta',count:1}
   ]
   }
   getAllFoodsByTag(tag:string):food[]{
