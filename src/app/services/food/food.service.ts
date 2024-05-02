@@ -35,7 +35,7 @@ export class FoodService {
       origins:['itely','egypt','japan'],
       stars:4.5,
       cooktime:'16-20',
-    imgurl:'docs/assets/images/food1.jpg',
+    imgurl: '/food-project/docs/assets/images/food1.jpg',
     tags:['Pasta', 'lunch']
     },
     {
